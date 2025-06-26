@@ -1,0 +1,129 @@
+:root {
+	color-scheme: light dark;
+	--card: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	--main-clr: hsl(289, 85%, 34%);
+	--border: 1.6px solid #ccc;
+	--dialog-bgc: hsl(0, 0%, 100%);
+	--block-bgc: #fff;
+	--head-bgc: whitesmoke;
+	--icon-clr: black;
+	--toast-bgc: #333;
+	--toast-txt: rgb(255, 208, 0);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--card: 0 1px 4px rgba(200, 200, 200, 0.2), 0 1px 2px rgba(200, 200, 200, 0.3);
+		--head-bgc: hsl(0, 0%, 18%);
+		--block-bgc: hsl(0, 0%, 14%);
+		--dialog-bgc: hsl(0, 0%, 22%);
+		--icon-clr: white;
+		--toast-bgc: #5e5f5f;
+		--toast-txt: rgb(245, 140, 3);
+	}
+}
+
+body {
+	font-family: BlinkMacSystemFont, Segoe UI, Roboto, Ubuntu, Helvetica, Arial, sans-serif;
+	text-size-adjust: 100%;
+	font-size: 100%;
+	text-rendering: optimizeSpeed;
+	margin: 0;
+	background-color: light-dark(whitesmoke, black);
+}
+
+code {
+	background-color: light-dark(hsl(0, 0%, 97%), hsl(0, 1%, 35%));
+	padding: 1px;
+}
+
+button {
+	--btn-clr: dodgerblue;
+	box-shadow: var(--card);
+	background-color: var(--btn-clr);
+	border-radius: 0.4em;
+	padding: 0.6em 0.8em;
+	border: none;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+
+	&:disabled {
+		background-color: grey;
+		cursor: not-allowed;
+	}
+}
+
+dialog {
+	border: none;
+	box-shadow: var(--card);
+	border-radius: 0.4em;
+	color: inherit;
+	background-color: light-dark(hsl(0, 0%, 100%), hsl(0, 0%, 22%));
+
+	&::backdrop {
+		background-color: rgb(0 0 0 / 0.4);
+	}
+
+	&[open] {
+		animation: slide-from-bottom 0.6s ease-out normal;
+	}
+}
+
+#host-permission {
+	& h2 {
+		text-align: center;
+	}
+
+	& dt {
+		display: inline-block;
+		padding: 2px;
+		font-weight: bold;
+		background-color: var(--bg-bgc);
+	}
+}
+
+/* snackbar  */
+#snackbar {
+	min-width: 8em;
+	background-color: light-dark(#333, #5e5f5f);
+	color: light-dark(rgb(255, 208, 0), rgb(245, 140, 3));
+	font-weight: 500;
+	text-align: center;
+	border-radius: 1em;
+	padding: 0.4em 0.8em;
+	position: fixed;
+	z-index: 1000;
+	bottom: 2em;
+	inset-inline: 0;
+	margin-inline: auto;
+	width: max-content;
+	translate: 0 200%;
+	animation: in-out 4s ease-out;
+
+	&.error {
+		top: 2em;
+		bottom: unset;
+		background-color: red;
+		color: white;
+		translate: 0 -200%;
+	}
+}
+
+@keyframes in-out {
+	10%,
+	90% {
+		translate: 0 0;
+	}
+}
+
+@keyframes slide-from-bottom {
+	from {
+		translate: 0 110%;
+	}
+
+	to {
+		translate: 0 0;
+	}
+}

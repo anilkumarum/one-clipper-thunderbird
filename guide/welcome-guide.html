@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oneClipper welcome guide</title>
+</head>
+
+<body>
+    <style>
+        :root {
+            color-scheme: light dark;
+            interpolate-size: allow-keywords;
+        }
+
+        body {
+            font-size: 100%;
+            background-color: light-dark(whitesmoke, black);
+        }
+
+        article {
+            box-sizing: border-box;
+            width: 70%;
+            margin-left: 15%;
+            padding: 0.4em;
+            line-height: 1.4;
+            border-radius: 0.4em;
+            background-color: light-dark(white, hsl(0, 0%, 15%));
+            box-shadow: rgba(219, 219, 219, 0.19) 0px 10px 20px, rgba(163, 163, 163, 0.23) 0px 6px 6px;
+        }
+
+        li {
+            margin-bottom: 0.4em;
+
+            &>div {
+                font-weight: bold;
+            }
+        }
+
+        kbd {
+            font-weight: 500;
+            background-color: light-dark(hsl(0, 0%, 92%), rgb(60, 60, 60));
+            padding-inline: 1px;
+        }
+
+        video {
+            display: block;
+            max-width: 80%;
+            margin-inline: auto;
+            margin-top: 0.2em;
+            border-radius: 0.4em;
+        }
+
+        figcaption {
+            text-align: center;
+            font-size: 90%;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-inline: auto;
+
+            & th,
+            & td {
+                border: 1px solid rgb(160 160 160);
+            }
+        }
+    </style>
+    <h1 style="text-align: center;">Thanks for installing <strong>oneClipper</strong></h1>
+    <article>
+        <h1>How to use oneClipper</h1>
+
+
+        <ol>
+            <b>Action buttons</b>
+            <li>Clip to One Note: Clip message to oneNote </li>
+        </ol>
+
+        <table id="global-keyboard-shortcuts">
+            <caption>Global Keyboard shortcuts</caption>
+            <thead>
+                <tr>
+                    <th> Format Action</th>
+                    <th>Keyboard Shortcut</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Open popup window</td>
+                    <td id="_execute_action"><kbd>Alt + O</kbd></td>
+                    <td><button>Change</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <video src="" controls></video>
+        <p><a href="https://support.mozilla.org/en-US/kb/manage-extension-shortcuts-firefox" target="_blank"
+                rel="noopener noreferrer">Change keyboard shortcuts</a> guide</p>
+
+        <h3>How to connect your oneNote</h3>
+        <ol>
+            <li>After install extension, Open extension's popup window by clicking on extension's icon or keyboard
+                shortcut (Alt+O).</li>
+            <li> One Note connection dialog auto popup.</li>
+            <li> If want to connect your Office 365/Work/School account then select <b>Work/Office 365</b> option.
+                Click on <b>Connect with OneNote</b> button.</li>
+            <b> ℹ️ Info : You can add multiple One Note account</b>
+        </ol>
+
+        <h3>How to send message to One Note</h3>
+        <ol>
+            <li>
+                Open extension's popup window by clicking on extension's icon or keyboard shortcut
+                (Alt+O).
+            </li>
+            <li>Click on <button>Clip to One Note</button> to send message to One Note </li>
+        </ol>
+
+        <h3>Configurations</h3>
+        <div>Open extension's <a href="options/index.html">options</a> page</div>
+        <ol>
+            <li><b>Insert Attachments Inline</b>: Display images and PDFs directly within the page content</li>
+            <li>Page name format</li>
+            <li>Date format</li>
+        </ol>
+    </article>
+    <script type="module" src="./guide.js"></script>
+</body>
+
+</html>

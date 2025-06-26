@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oneClipper: web clipper for oneNote</title>
+    <link rel="stylesheet" href="./style/base.css">
+    <link rel="stylesheet" href="./style/popup.css">
+</head>
+
+<body>
+    <h2 class="one-clipper"><img src="/icon-24.png" alt="" height="20">oneClipper</h2>
+
+    <main>
+        <section style="text-align: center;">
+            <div id="accounts">🧰 Accounts</div>
+            <account-switch></account-switch>
+        </section>
+
+        <section>
+            <span id="notebooks">&nbsp;Notebooks</span>
+            <svg class="refresh" viewBox="0 0 24 24" id="refreshNotebooks">
+                <title>Refresh notebooks</title>
+                <path />
+            </svg>
+            <select id="notebook" style="display: block;"></select>
+        </section>
+
+        <section>
+            <span id="sections">&nbsp;Sections</span>
+            <svg class="refresh" viewBox="0 0 24 24" id="refreshSections">
+                <title>Refresh sections</title>
+                <path />
+            </svg>
+            <div class="select" id="section-select">
+                <span>Section</span>
+                <svg class="chev-down" viewBox="0 0 24 24">
+                    <title>Select Sections</title>
+                    <path />
+                </svg>
+            </div>
+        </section>
+
+        <div class="clip-btn-wrapper">
+            <select name="pages">
+                <option value="new_page">Create new page</option>
+            </select>
+            <button style="--hue:210" id="clip-to-onenote">
+                <svg class="clip" viewBox="0 0 24 24">
+                    <path />
+                </svg>
+                <span id="clip_to_onenote">Clip to One Note</span>
+            </button>
+        </div>
+    </main>
+    <output id="snackbar" hidden></output>
+    <script type="module" src="./js/popup.js"></script>
+</body>
+
+</html>

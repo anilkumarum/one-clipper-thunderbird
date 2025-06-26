@@ -1,0 +1,125 @@
+main {
+	display: flex;
+
+	& aside {
+		flex-basis: 14%;
+		flex-shrink: 0;
+		background-color: light-dark(hsl(0, 0%, 92%), hsl(0, 0%, 12%));
+		border-right: var(--border);
+	}
+
+	& article {
+		flex-grow: 1;
+		background-color: light-dark(hsl(0, 0%, 95%), hsl(0, 0%, 16%));
+		overflow-y: auto;
+		height: 100vh;
+		position: relative;
+		scroll-behavior: smooth;
+	}
+}
+
+/* Aside navigation */
+aside {
+	& details {
+		width: 100%;
+	}
+
+	& summary,
+	& .nav-link {
+		padding: 0.5em;
+		background-color: light-dark(hsl(0, 0%, 100%), hsl(0, 0%, 20%));
+		border-bottom: var(--border);
+	}
+
+	& ul {
+		margin-block: 0;
+		padding-left: 1em;
+	}
+
+	& li {
+		list-style-type: none;
+		padding-block: 2px;
+		margin-block: 2px;
+	}
+
+	& a {
+		text-decoration: none;
+		color: inherit;
+	}
+}
+
+section {
+	width: 80%;
+	margin-inline: auto;
+
+	& h2 {
+		margin-bottom: 0.5em;
+	}
+}
+
+section > header,
+section .config-item {
+	display: flex;
+	justify-content: space-between;
+	padding: 1em;
+	align-items: center;
+}
+
+section header {
+	font-weight: bold;
+	border-radius: 0.4em 0.4em 0 0;
+	background-color: var(--head-bgc);
+}
+
+section .config-item:not(:last-child) {
+	border-bottom: var(--border);
+}
+
+blockquote,
+.card {
+	box-shadow: var(--card);
+	border-radius: 0.4em;
+	background-color: var(--block-bgc);
+	margin-inline: 0;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	background-color: var(--block-bgc);
+
+	& td,
+	& th {
+		border: 1px solid light-dark(hsl(0, 1%, 85%), hsl(0, 1%, 28%));
+		text-align: left;
+		padding: 8px;
+	}
+
+	& tr:nth-child(even) {
+		background-color: light-dark(hsl(0, 1%, 85%), hsl(0, 1%, 28%));
+	}
+
+	& kbd {
+		font-weight: bold;
+		font-size: 0.9rem;
+	}
+}
+
+.contact-form {
+	padding: 0.5em 5em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 0.5em;
+
+	& input {
+		width: 70%;
+		padding: 0.4em;
+	}
+
+	& textarea {
+		field-sizing: content;
+		width: 70%;
+		min-height: 5lh;
+	}
+}

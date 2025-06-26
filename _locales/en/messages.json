@@ -1,0 +1,139 @@
+{
+	"extName": {
+		"message": "oneClipper - send mail to one Note",
+		"description": "Extension name"
+	},
+	"extDescription": {
+		"message": "Send Thunderbird emails to Microsoft OneNote with one click. Supports multiple accounts, custom organization & attachments.",
+		"description": "Extension description"
+	},
+
+	"connect_with_onenote": {
+		"message": "Connect With One Note",
+		"description": "Connect With Onenote"
+	},
+
+	"clip_to_onenote": {
+		"message": "Clip to One Note",
+		"description": "Clip to One Note"
+	},
+
+	"accounts": {
+		"message": "🧰 Accounts",
+		"description": "Accounts"
+	},
+
+	"notebooks": {
+		"message": "Notebooks",
+		"description": "Notebooks"
+	},
+
+	"sections": {
+		"message": "Sections",
+		"description": "Sections"
+	},
+
+	"add_account": {
+		"message": "Add account",
+		"description": "Add account"
+	},
+
+	"connection_required": {
+		"message": "Connection required",
+		"description": "Connection required"
+	},
+
+	"give_access_to_oneclipper": {
+		"message": "Give access to oneClipper to insert clipped contents into oneNote",
+		"description": "Give access to oneClipper to insert clipped contents into oneNote"
+	},
+
+	"oAuth_token_expires_in_1hour": {
+		"message": "oAuth token expires in 1hour. Need permission to refresh token automatically",
+		"description": "oAuth token expires in 1hour. Need permission to refresh token automatically"
+	},
+
+	"we_dont_read_any_files": {
+		"message": "We don't read any files inside onenote.",
+		"description": "We don't read any files inside onenote."
+	},
+
+	"we_dont_edit_any_files": {
+		"message": "We don't edit any files inside onenote.",
+		"description": "We don't edit any files inside onenote."
+	},
+
+	"we_dont_save_any_user_personal_info": {
+		"message": "We don't save any user's personal info.",
+		"description": "We don't save any user's personal info."
+	},
+
+	"privacy_policy": {
+		"message": "Privacy policy",
+		"description": "Privacy policy"
+	},
+
+	"one_note_permission": {
+		"message": "One Note permission explain",
+		"description": "One Note permission explain"
+	},
+
+	"attachments": {
+		"message": "Attachments",
+		"description": "Attachments"
+	},
+	"insert_attachments_inline": {
+		"message": "Insert Attachments Inline",
+		"description": "Insert Attachments Inline"
+	},
+
+	"configuration": {
+		"message": "🛠️ Configuration",
+		"description": "Configuration"
+	},
+
+	"starter_guide": {
+		"message": "Starter guide",
+		"description": "Starter guide"
+	},
+
+	"changelog": {
+		"message": "Changelog",
+		"description": "Changelog"
+	},
+
+	"more_extensions": {
+		"message": "More extensions",
+		"description": "More extensions"
+	},
+
+	"contact_us": {
+		"message": "📧 Contact us",
+		"description": "Contact us"
+	},
+
+	"rate_your_experience": {
+		"message": "Rate Your Experience",
+		"description": "Rate Your Experience"
+	},
+
+	"donate": {
+		"message": "Donate",
+		"description": "Donate"
+	},
+
+	"account_removed": {
+		"message": "Account removed",
+		"description": "Account removed"
+	},
+
+	"create_new_page": {
+		"message": "Create new page",
+		"description": "Create new page"
+	},
+
+	"message_sent_to_one_note": {
+		"message": "Message sent to One Note",
+		"description": "Message sent to One Note"
+	}
+}

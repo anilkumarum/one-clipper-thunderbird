@@ -1,0 +1,48 @@
+{
+	"manifest_version": 2,
+	"default_locale": "en",
+	"name": "oneClipper - send mail to one Note",
+	"short_name": "oneClipper",
+	"description": "Send Thunderbird emails to Microsoft OneNote with one click. Supports multiple accounts, custom organization & attachments.",
+	"version": "0.0.1",
+	"author": "anilkumarum",
+	"icons": {
+		"128": "icon-128.png",
+		"32": "assets/icon_32.png",
+		"24": "icon-24.png",
+		"16": "assets/icon.png"
+	},
+
+	"message_display_action": {
+		"default_icon": { "16": "assets/icon.png", "24": "icon-24.png" },
+		"default_title": "Clip to OneNote",
+		"default_popup": "popup/index.html"
+	},
+
+	"options_page": "options/index.html",
+
+	"background": {
+		"scripts": ["background/background.js"],
+		"type": "module"
+	},
+
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "oneclipper@noterail.co",
+			"strict_min_version": "125.0"
+		}
+	},
+
+	"commands": {
+		"_execute_message_display_action": {
+			"suggested_key": {
+				"default": "Alt+O",
+				"windows": "Alt+O",
+				"mac": "Alt+O",
+				"linux": "Alt+O"
+			}
+		}
+	},
+
+	"permissions": ["storage", "messagesRead", "menus"]
+}

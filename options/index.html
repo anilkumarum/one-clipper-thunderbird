@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oneClipper configuration</title>
+    <link rel="stylesheet" href="./style/base.css">
+    <link rel="stylesheet" href="./style/layout.css">
+    <link rel="stylesheet" href="./style/setting.css">
+</head>
+
+<body>
+    <main>
+        <aside>
+            <nav>
+                <div class="nav-link"> <a href="#configuration">Configuration</a> </div>
+                <div class="nav-link"> <a href="/guide/welcome-guide.html" id="starter_guide">Starter guide</a> </div>
+                <div class="nav-link"> <a href="/guide/changelog.html" id="changelog">Changelog</a> </div>
+                <div class="nav-link">
+                    <a href="https://addons.mozilla.org/en-US/firefox/addon/oneclipper-onenote-web-clipper/"
+                        target="_blank" id="rate_your_experience">Rate Your Experience</a>
+                </div>
+                <div class="nav-link"> <a href="#donation" id="donate">Donate</a> </div>
+                <div class="nav-link"> <a href="https://noterail.co" target="_blank" id="more_extensions">More
+                        extensions</a> </div>
+                <div class="nav-link"> <a href="mailto:noterailhelp@gmail.com" id="contact_us">Contact us</a> </div>
+            </nav>
+        </aside>
+        <article>
+            <section>
+                <h2 id="configuration">Configuration </h2>
+                <blockquote>
+                    <div class="config-item">
+                        <div class="setting-info">
+                            <h3 id="insert_attachments_inline">Insert Attachments Inline</h3>
+                            <div>
+                                <span>Display images and PDFs directly within the page content</span>
+                            </div>
+                        </div>
+
+                        <label class="switch">
+                            <input type="checkbox" id="toggle_inline_attachment" />
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="config-item">
+                        <div class="setting-info">
+                            <h3>Page name format</h3>
+                            <div>Page name format</div>
+                        </div>
+
+                        <label>
+                            <select name="filename-format" id="filename-format">
+                                <option value="subject">{subject}</option>
+                                <option value="date-subject">{date}-{subject}</option>
+                                <option value="reverseDate-subject">{reverseDate}-{subject}</option>
+                                <option value="subject-date">{subject}-{date}</option>
+                                <option value="sender-subject">{sender}-{subject}</option>
+                                <option value="subject-sender">{subject}-{sender}</option>
+                                <option value="reverseSender-subject">{reverseSender}-{subject}</option>
+                                <option value="date-sender-subject">{date}-{sender}-{subject}</option>
+                                <option value="date-subject-sender">{date}-{subject}-{sender}</option>
+                                <option value="sender-date-subject">{sender}-{date}-{subject}</option>
+                                <option value="reverseSender-date-subject">{reverseSender}-{date}-{subject}</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="config-item">
+                        <div class="setting-info">
+                            <h3>Date format</h3>
+                            <div>Date format</div>
+                        </div>
+
+                        <label>
+                            <select name="date-format" id="dateFormat">
+                                <option value='{ "dateStyle": "full" }'>Weekday, DD Month YYYY</option>
+                                <option value='{ "dateStyle": "long" }'>DD Month YYYY</option>
+                                <option value='{ "dateStyle": "short" }'>DD/MM/YYYY</option>
+                                <option value='yyyy-mm-dd'>YYYY/MM/DD</option>
+                                <option value='{ "dateStyle": "full","timeStyle":"short" }'>Weekday, DD Month
+                                    YYYY
+                                    at HH:MM
+                                </option>
+                                <option value='{ "dateStyle": "long","timeStyle":"short" }'>DD Month YYYY at
+                                    HH:MM
+                                </option>
+                                <option value='{ "dateStyle": "medium","timeStyle":"short" }' selected>DD Month
+                                    YYYY
+                                    HH:MM
+                                </option>
+                                <option value='{ "dateStyle": "short","timeStyle":"short" }'>DD/MM/YYYY, HH:MM
+                                </option>
+                            </select>
+                        </label>
+                    </div>
+                </blockquote>
+            </section>
+
+
+            <section>
+                <h2 id="donation">Donate</h2>
+                <div style="display: flex;align-items: center;column-gap: 2em;">
+                    <a href="https://paypal.me/anilf68?country.x=IN&locale.x=en_GB" target="_blank">
+                        <img src="https://live.staticflickr.com/65535/54610361568_1a5af1cf08_m.jpg"
+                            alt="Donate with paypal" />
+                    </a>
+                    <style> img.kofiimg { display: initial !important; vertical-align: middle; height: 13px !important; width: 20px !important; padding-top: 0 !important; padding-bottom: 0 !important; border: none; margin-top: 0; margin-right: 5px !important; margin-left: 0 !important; margin-bottom: 3px !important; content: url('https://storage.ko-fi.com/cdn/cup-border.png') } .kofiimg:after { vertical-align: middle; height: 25px; padding-top: 0; padding-bottom: 0; border: none; margin-top: 0; margin-right: 6px; margin-left: 0; margin-bottom: 4px !important; content: url('https://storage.ko-fi.com/cdn/whitelogo.svg') } .btn-container { display: inline-block !important; white-space: nowrap; min-width: 160px } span.kofitext { color: #fff !important; letter-spacing: -0.15px !important; text-wrap: none; vertical-align: middle; line-height: 45px !important; padding: 0; text-align: center; text-decoration: none !important; text-shadow: 0 1px 1px rgba(34, 34, 34, 0.05); } .kofitext a { color: #fff !important; text-decoration: none !important; } .kofitext a:hover { color: #fff !important; text-decoration: none } a.kofi-button { box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2); line-height: 36px !important; min-width: 150px; display: inline-block !important; background-color: #29abe0; padding: 2px 12px !important; text-align: center !important; border-radius: 7px; color: #fff; cursor: pointer; overflow-wrap: break-word; vertical-align: middle; border: 0 none #fff !important; font-family: 'Quicksand', Helvetica, Century Gothic, sans-serif !important; text-decoration: none; text-shadow: none; font-weight: 700 !important; font-size: 14px !important } a.kofi-button:visited { color: #fff !important; text-decoration: none !important } a.kofi-button:hover { opacity: .85; color: #f5f5f5 !important; text-decoration: none !important } a.kofi-button:active { color: #f5f5f5 !important; text-decoration: none !important } .kofitext img.kofiimg { height: 15px !important; width: 22px !important; display: initial; animation: kofi-wiggle 3s infinite; } @keyframes kofi-wiggle { 0% { transform: rotate(0) scale(1) } 60% { transform: rotate(0) scale(1) } 75% { transform: rotate(0) scale(1.12) } 80% { transform: rotate(0) scale(1.1) } 84% { transform: rotate(-10deg) scale(1.1) } 88% { transform: rotate(10deg) scale(1.1) } 92% { transform: rotate(-10deg) scale(1.1) } 96% { transform: rotate(10deg) scale(1.1) } 100% { transform: rotate(0) scale(1) } } </style> <div class="btn-container"><a title="Support me on ko-fi.com" class="kofi-button" style="background-color:#9a1bd1;" href="https://ko-fi.com/P5P11D0V6X" target="_blank"> <span class="kofitext"><img src="https://storage.ko-fi.com/cdn/cup-border.png" alt="Ko-fi donations" class="kofiimg">Feed the dev 🍜</span></a></div> <style> .bmc-btn svg { height: 32px !important; margin-bottom: 0px !important; box-shadow: none !important; border: none !important; vertical-align: middle !important; transform: scale(0.9); flex-shrink: 0; } .bmc-btn { min-width: 210px; color: #000000; background-color: #FFDD00 !important; height: 60px; border-radius: 12px; font-size: 28px; font-weight: Normal; border: none; padding: 0px 24px; line-height: 27px; text-decoration: none !important; display: inline-flex !important; align-items: center; font-family: 'Cookie', cursive !important; -webkit-box-sizing: border-box !important; box-sizing: border-box !important; } .bmc-btn:hover, .bmc-btn:active, .bmc-btn:focus { text-decoration: none !important; cursor: pointer; } .bmc-btn-text { text-align: left; margin-left: 8px; display: inline-block; line-height: 0; width: 100%; flex-shrink: 0; font-family: [FONT] !important; } .logo-outline { fill: #000000; } .logo-coffee { fill: #ffffff; } </style>
+                    <div class="bmc-btn-container"><a class="bmc-btn" target="_blank"
+                            href="https://buymeacoffee.com/anilkumarum">☕<span class="bmc-btn-text">Buy me a
+                                coffee</span></a></div>
+                </div>
+            </section>
+
+        </article>
+    </main>
+    <script type="module" src="./js/options.js"></script>
+</body>
+
+</html>

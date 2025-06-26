@@ -1,0 +1,11 @@
+build
+crx-hmr.js
+one_clipper.zip
+.vscode
+.TODO
+build.sh
+jsconfig.json
+auth
+biome.json
+_metadata
+
